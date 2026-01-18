@@ -12,6 +12,13 @@
   max-width: 75%;
   margin: 0 auto;
 }
+.common-p {
+  font-size: 1.4rem;
+  font-weight: normal;
+  line-height: 35px;
+  color: #ffffff;
+  padding: 10px 8vw;
+}
 /* header section --------------------- */
 
 .logo {
@@ -22,6 +29,7 @@
   padding: 100px 0;
 }
 .hero-circle {
+  position: relative;
   width: 18vw;
   height: 18vw;
   background-image: url("assets/hero-circle.png");
@@ -34,6 +42,16 @@
 .hero-circle > img {
   width: 7vw;
 }
+.base {
+  position: absolute;
+  top: 0.5vw;
+  right: 1vw;
+  background: #00ff88;
+  font-size: 1.1vw;
+  font-weight: 600;
+  padding: 0.5vw 1vw;
+  border-radius: 1.5vw;
+}
 .hero-btn {
   display: flex;
   justify-content: center;
@@ -43,6 +61,24 @@
   border: 1px solid #00ff88;
   color: #00ff88;
   border-radius: 25px;
+}
+
+/* about section --------------------- */
+.about {
+  background-color: #1a0b2e;
+}
+.about-title {
+  font-size: 3vw;
+}
+.about-info {
+  display: flex;
+  justify-content: space-between;
+}
+.info-card > h1 {
+  color: #00ff88;
+  font-size: 3vw;
+  font-weight: 900;
+  text-align: center;
 }
 /* medium divices -------------------- */
 @media screen and (max-width: 992px) {
