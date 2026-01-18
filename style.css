@@ -18,6 +18,15 @@
   line-height: 35px;
   color: #ffffff;
 }
+
+/* text-center text-white font-bold text-[48px] */
+.section-title {
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  font-size: 3vw;
+  margin-bottom: 40px;
+}
 /* header section --------------------- */
 
 .logo {
@@ -66,9 +75,7 @@
 .about {
   background-color: #1a0b2e;
 }
-.about-title {
-  font-size: 3vw;
-}
+
 .about-info {
   display: flex;
   justify-content: space-between;
@@ -137,6 +144,124 @@
 .choose-card p {
   font-size: 16px;
   line-height: 24px;
+}
+
+/* feature section -------------------- */
+.feature {
+  background-color: #1a0b2e;
+  padding: 120px 0;
+  color: white;
+}
+.feature-contents {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+.feature-card {
+  border-radius: 40px;
+}
+.feature-card iframe {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+}
+.feature-card h3 {
+  font-size: 1.5vw;
+  font-weight: bold;
+  padding: 16px 0;
+}
+.feature-card p {
+  font-size: 16px;
+  line-height: 24px;
+}
+.feature-card .clock {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 6px;
+  padding-top: 15px;
+  color: #00ff88;
+  font-size: 1vw;
+  font-weight: 600;
+}
+.feature-card .clock > img {
+  height: 1.2vw;
+}
+/* host --------------------------------- */
+.host {
+  margin-top: 120px;
+}
+.host-card {
+  background-color: #351165;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding: 40px;
+  border-radius: 40px;
+  gap: 25px;
+}
+
+.host-card > img {
+  height: 12.5vw;
+}
+.host-card .content h1 {
+  font-size: 2vw;
+  font-weight: bold;
+}
+.host-card .content p {
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 24px;
+  margin-top: 16px;
+}
+.host-imgs {
+  display: flex;
+  justify-content: start;
+  gap: 0.5vw;
+  margin-top: 16px;
+}
+.host-imgs div {
+  height: 2.5vw;
+  width: 2.5vw;
+  border: 1px solid #fb09b4;
+  border-radius: 50%;
+  padding: 0.75vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* footer ---------------------- */
+footer {
+  background-image: url("assets/footer-bg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 120px 0;
+  text-align: center;
+  color: white;
+  font-size: 16px;
+}
+footer > .container > img {
+  width: 25.6vw;
+  margin: 0 auto;
+}
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+.social-link {
+  display: flex;
+  gap: 8px;
+  margin: 35px 0;
+}
+.social-link > img {
+  width: 1.2vw;
+  aspect-ratio: 1/1;
+}
+footer > p {
+  font-size: 1vw;
+  text-align: center;
 }
 /* medium divices -------------------- */
 @media screen and (max-width: 992px) {
