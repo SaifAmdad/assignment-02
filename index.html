@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>TechWave</title>
+  </head>
+  <body>
+    <header class="bg-[#1A0B2E]">
+      <nav
+        class="container mx-auto flex items-center justify-between text-white pt-8"
+      >
+        <img src="assets/logo.png" alt="" srcset="" class="logo" />
+        <ul class="flex justify-between gap-8">
+          <li><a href="">About</a></li>
+          <li><a href="">Episodes</a></li>
+          <li><a href="">Host</a></li>
+        </ul>
+        <button
+          class="btn py-3 px-4 flex items-center gap-2 text-base font-semibold"
+        >
+          Subscribe
+          <i class="fa-solid fa-arrow-right-long" style="color: #ffff"></i>
+        </button>
+      </nav>
+      <div
+        class="banner bg-[url('assets/hero-bg.png')] flex flex-col items-center bg-cover bg-center bg-no-repeat"
+      >
+        <div class="hero-circle">
+          <img src="assets/microphone.png" alt="" />
+        </div>
+        <h1 class="text-6xl py-10 font-extrabold text-[#1A0B2E]">TechWave</h1>
+        <div class="hero-btn mt-2.5">
+          <button class="btn py-3 px-5 flex items-center gap-2">
+            <img src="assets/spotify.png" alt="" srcset="" /> Listen on Spotify</button
+          ><button class="btn-subscribe py-3 px-5 flex items-center gap-2">
+            <img src="assets/message.png" alt="" srcset="" /> Subscribe
+          </button>
+        </div>
+      </div>
+    </header>
+  </body>
+</html>

@@ -1,0 +1,59 @@
+@import "tailwindcss";
+
+/* comon classes ----------------- */
+.btn {
+  background-image: linear-gradient(to right, #f7e93f, #fb09b4, #9100f8);
+  border-radius: 25px;
+  font-size: 16px;
+  color: #ffff;
+}
+
+.container {
+  max-width: 75%;
+  margin: 0 auto;
+}
+/* header section --------------------- */
+
+.logo {
+  max-width: 219px;
+}
+
+.banner {
+  padding: 100px 0;
+}
+.hero-circle {
+  width: 18vw;
+  height: 18vw;
+  background-image: url("assets/hero-circle.png");
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hero-circle > img {
+  width: 7vw;
+}
+.hero-btn {
+  display: flex;
+  justify-content: center;
+  gap: 0.7vw;
+}
+.btn-subscribe {
+  border: 1px solid #00ff88;
+  color: #00ff88;
+  border-radius: 25px;
+}
+/* medium divices -------------------- */
+@media screen and (max-width: 992px) {
+  .container {
+    max-width: 95%;
+  }
+}
+
+/* small devices ---------------------- */
+@media screen and (max-width: 576px) {
+  .container {
+    width: 100%;
+  }
+}
