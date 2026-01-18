@@ -13,11 +13,10 @@
   margin: 0 auto;
 }
 .common-p {
-  font-size: 1.4rem;
+  font-size: 16px;
   font-weight: normal;
   line-height: 35px;
   color: #ffffff;
-  padding: 10px 8vw;
 }
 /* header section --------------------- */
 
@@ -73,12 +72,71 @@
 .about-info {
   display: flex;
   justify-content: space-between;
+  overflow: hidden;
+  padding: 120px 0;
 }
 .info-card > h1 {
   color: #00ff88;
   font-size: 3vw;
   font-weight: 900;
   text-align: center;
+}
+.info-card > p {
+  font-size: 1vw;
+}
+
+/* choose section --------------------- */
+.choose {
+  background-color: #230e3d;
+  padding: 120px 0;
+}
+
+.choose-cards {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas:
+    "card1 card2 card2"
+    "card1 card3 card3"
+    "card4 card4 card5";
+}
+
+#choose-card1 {
+  grid-area: card1;
+}
+#choose-card2 {
+  grid-area: card2;
+}
+#choose-card3 {
+  grid-area: card3;
+}
+#choose-card4 {
+  grid-area: card4;
+}
+#choose-card5 {
+  grid-area: card5;
+}
+.choose-card {
+  color: #ffff;
+  background: #351165;
+  border-radius: 40px;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.choose-card > img {
+  width: 3.7vw;
+  min-width: 50px;
+}
+.choose-card h3 {
+  font-size: 1.5vw;
+  font-weight: bold;
+  padding: 16px 0;
+}
+.choose-card p {
+  font-size: 16px;
+  line-height: 24px;
 }
 /* medium divices -------------------- */
 @media screen and (max-width: 992px) {
