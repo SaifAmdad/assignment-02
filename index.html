@@ -26,6 +26,9 @@
         class="container mx-auto flex items-center justify-between text-white pt-8"
       >
         <img src="assets/logo.png" alt="" srcset="" class="logo" />
+        <div class="hamburger">
+          <img src="./assets/hamburger-menu.png" alt="" srcset="" />
+        </div>
         <ul class="flex justify-between gap-8">
           <li><a href="">About</a></li>
           <li><a href="">Episodes</a></li>
@@ -38,14 +41,22 @@
           <i class="fa-solid fa-arrow-right-long" style="color: #ffff"></i>
         </button>
       </nav>
-      <div
-        class="banner bg-[url('assets/hero-bg.png')] flex flex-col items-center bg-cover bg-center bg-no-repeat"
-      >
-        <div class="hero-circle">
-          <img src="assets/microphone.png" alt="" />
-          <p class="base">NEW</p>
+      <div class="banner">
+        <div class="hero-circle-container">
+          <div id="animation"></div>
+          <div class="hero-circle">
+            <img src="assets/microphone.png" alt="" />
+            <p class="base">NEW</p>
+          </div>
         </div>
-        <h1 class="text-[3.7vw] py-10 font-extrabold text-[#ffff]">TechWave</h1>
+
+        <h1 class="text-[40px] lg:text-[3.7vw] font-extrabold text-[#ffff]">
+          TechWave
+        </h1>
+        <p class="text-[16px] lg:text-[1.2vw] text-center px-5 text-white py-3">
+          Your daily dose of tech insights, productivity hacks, and personal
+          growth
+        </p>
         <div class="hero-btn mt-2.5">
           <button class="btn py-3 px-5 flex items-center gap-2">
             <img src="assets/spotify.png" alt="" srcset="" /> Listen on Spotify</button

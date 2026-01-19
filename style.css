@@ -32,12 +32,30 @@
 .logo {
   max-width: 219px;
 }
-
+.hamburger {
+  display: none;
+  width: 18px;
+}
 .banner {
   padding: 100px 0;
+  background-image: url("assets/hero-bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.hero-circle-container {
+  width: 20vw;
+  height: 20vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .hero-circle {
-  position: relative;
+  position: absolute;
   width: 18vw;
   height: 18vw;
   background-image: url("assets/hero-circle.png");
@@ -47,6 +65,23 @@
   justify-content: center;
   align-items: center;
 }
+#animation {
+  position: absolute;
+  height: 19vw;
+  width: 19vw;
+  background-image: linear-gradient(to right, #00ff88, white, #1a0b2e, #fb09b4);
+  border-radius: 50%;
+  animation: spring 3s linear infinite;
+}
+@keyframes spring {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 .hero-circle > img {
   width: 7vw;
 }
@@ -268,11 +303,136 @@ footer > p {
   .container {
     max-width: 95%;
   }
+  /* -------------------------------- */
+  .hero-circle-container {
+    width: 240px;
+    height: 240px;
+  }
+  .hero-circle {
+    width: 200px;
+    height: 200px;
+    top: 166px;
+  }
+
+  #animation {
+    height: 220px;
+    width: 220px;
+    top: 156px;
+  }
+  .hero-circle > img {
+    width: 80px;
+  }
+  .base {
+    top: 1px;
+    right: -6px;
+    font-size: 16px;
+    padding: 8px 16px;
+    border-radius: 32px;
+  }
+  /* --------------------------- */
+  nav > button {
+    display: none;
+  }
+  .section-title {
+    font-size: 32px;
+  }
+  .about-info {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-evenly;
+    row-gap: 20px;
+  }
+  .info-card > h1 {
+    font-size: 40px;
+  }
+  .info-card > p {
+    font-size: 16px;
+  }
+  .choose-cards {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "card1"
+      "card2"
+      "card3"
+      "card4"
+      "card5";
+  }
+  .choose-card h3 {
+    font-size: 24px;
+  }
+  .feature-contents {
+    max-width: 80%;
+    margin: 0 auto;
+    flex-direction: column;
+    row-gap: 50px;
+  }
+  .feature-card h3 {
+    font-size: 24px;
+  }
+
+  .feature-card .clock {
+    font-size: 16px;
+  }
+  .feature-card .clock > img {
+    height: 17px;
+  }
+
+  .host-card {
+    flex-direction: column;
+    text-align: center;
+  }
+  .host-card > img {
+    height: 37vw;
+  }
+  .host-card .content h1 {
+    font-size: 24px;
+  }
+
+  .host-imgs {
+    justify-content: center;
+    gap: 8px;
+  }
+  .host-imgs div {
+    height: 40px;
+    width: 40px;
+  }
+
+  .social-links {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    gap: 2px;
+    margin: 20px 0;
+  }
+  .social-link {
+    display: flex;
+    margin: 10px;
+  }
+  .social-link > img {
+    width: 20px;
+    aspect-ratio: 1/1;
+  }
+  footer > p {
+    font-size: 16px;
+    text-align: center;
+  }
 }
 
 /* small devices ---------------------- */
 @media screen and (max-width: 576px) {
   .container {
     width: 100%;
+  }
+  nav > ul,
+  nav > button {
+    display: none;
+  }
+
+  .feature-contents {
+    max-width: 100%;
+  }
+  .hamburger {
+    display: inline-block;
+    width: 18px;
   }
 }
