@@ -1,5 +1,3 @@
-@import "tailwindcss";
-
 /* comon classes ----------------- */
 .btn {
   background-image: linear-gradient(to right, #f7e93f, #fb09b4, #9100f8);
@@ -19,7 +17,6 @@
   color: #ffffff;
 }
 
-/* text-center text-white font-bold text-[48px] */
 .section-title {
   text-align: center;
   color: white;
@@ -38,7 +35,7 @@
 }
 .banner {
   padding: 100px 0;
-  background-image: url("./assets/hero-bg.png");
+  background-image: url("assets/hero-bg.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -48,6 +45,7 @@
   flex-direction: column;
 }
 .hero-circle-container {
+  position: relative;
   width: 20vw;
   height: 20vw;
   display: flex;
@@ -58,7 +56,7 @@
   position: absolute;
   width: 18vw;
   height: 18vw;
-  background-image: url("./assets/hero-circle.png");
+  background-image: url("assets/hero-circle.png");
   background-position: center;
   background-size: cover;
   display: flex;
