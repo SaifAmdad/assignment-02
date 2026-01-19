@@ -285,11 +285,13 @@ footer > .container > img {
 }
 .social-link {
   display: flex;
+  align-items: center;
   gap: 8px;
   margin: 35px 0;
 }
 .social-link > img {
-  width: 1.2vw;
+  width: 1.5vw;
+  height: 1.5vw;
   aspect-ratio: 1/1;
 }
 footer > p {
@@ -309,13 +311,11 @@ footer > p {
   .hero-circle {
     width: 200px;
     height: 200px;
-    top: 166px;
   }
 
   #animation {
     height: 220px;
     width: 220px;
-    top: 156px;
   }
   .hero-circle > img {
     width: 80px;
@@ -408,6 +408,7 @@ footer > p {
   }
   .social-link > img {
     width: 20px;
+    height: 20px;
     aspect-ratio: 1/1;
   }
   footer > p {
